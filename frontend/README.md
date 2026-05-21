@@ -1,16 +1,75 @@
-# React + Vite
+# Frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Overview
 
-Currently, two official plugins are available:
+React + Vite frontend for the project. Contains UI, components, and pages used by users.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Prerequisites
 
-## React Compiler
+- Node.js 16+ (LTS recommended)
+- npm or yarn
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Quickstart
 
-## Expanding the ESLint configuration
+1. Install dependencies
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+```bash
+npm install
+# or
+# yarn install
+```
+
+2. Environment
+
+- Create a `.env` or `.env.local` to store runtime variables (e.g., `VITE_API_URL`).
+
+3. Run development server
+
+```bash
+npm run dev
+```
+
+4. Build for production
+
+```bash
+npm run build
+npm run preview
+```
+
+## Scripts (package.json)
+
+- `dev`: Start Vite dev server
+- `build`: Create production build
+- `preview`: Preview production build
+- `lint` / `test`: (if configured) run linter/tests
+
+## Project structure
+
+- `src/`
+	- `main.jsx` — app entry
+	- `App.jsx` — top-level app
+	- `components/` — reusable components (`UserForm.jsx`, `UserList.jsx`, `Notification.jsx`)
+	- `pages/` — route-level pages (`Home.jsx`, `ViewData.jsx`)
+	- `assets/` — images and static assets
+
+## Connecting to backend
+
+- Set `VITE_API_URL` in `.env.local` to point to the backend API base URL.
+- Use `fetch` or your preferred HTTP client to call endpoints.
+
+## Linting & Formatting
+
+- ESLint config is present in `eslint.config.js`.
+- Run configured linters via `npm run lint` if available.
+
+## Testing
+
+- Add tests to `src/` and run via `npm test` if a test tool is configured.
+
+## Deployment
+
+- Build with `npm run build` and deploy the `dist/` folder to your static host (Netlify, Vercel, S3, etc.).
+
+## Next steps
+
+Add any required environment examples or CI/CD steps you want included.

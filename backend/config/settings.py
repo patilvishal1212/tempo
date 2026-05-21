@@ -1,6 +1,7 @@
 from pathlib import Path
 # from decuple import config
 from dotenv import load_dotenv
+import dj_database_url
 import os
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
