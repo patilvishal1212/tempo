@@ -78,3 +78,6 @@ python manage.py test
 ## Contact / Next steps
 
 If you need help wiring the frontend to API endpoints, tell me which endpoint list you want included here.
+
+<!-- postgresql://neondb_owner:npg_1UsuXmopNCa7@ep-frosty-morning-ao5aj5fv-pooler.c-2.ap-southeast-1.aws.neon.tech/neondb?sslmode=require&channel_binding=require -->
+
