@@ -168,7 +168,8 @@ const ContactForm = () => {
           <button
             type="submit"
             disabled={status.submitting}
-            className="w-full bg-blue-600 hover:bg-blue-700 text-white font-medium py-2.5 px-4 rounded-lg transition duration-200 disabled:bg-blue-400"
+            className="w-full bg-blue-600 hover:bg-blue-700 text-white font-medium py-2.5 px-4 
+             rounded-lg transition duration-200 disabled:bg-blue-400 sticky bottom-0"
           >
             {status.submitting ? "Sending..." : "Submit"}
           </button>
