@@ -33,7 +33,7 @@ const ContactForm = () => {
 
     try {
       // इथे तुमच्या Backend API चा URL टाका (उदा. http://localhost:5000/api/contact)
-      const response = await axios.post('http://127.0.0.1:8000/api/contact/', formData);
+      const response = await axios.post('https://forms-backend-n4rt.onrender.com/api/contact/', formData);
 
       if (response.status === 200 || response.status === 201) {
         setStatus({
