@@ -64,7 +64,8 @@ const ContactForm = () => {
 
   return (
     <div className="flex justify-center items-center min-h-screen bg-gray-100 p-4">
-      <div className="w-full max-w-md sm:max-w-lg bg-white p-4 sm:p-8 rounded-2xl shadow-lg">
+      <div className="w-full max-w-md sm:max-w-lg bg-white p-4 sm:p-8 rounded-2xl shadow-lg 
+                  overflow-y-auto max-h-screen">
         <h2 className="text-xl sm:text-2xl font-bold text-gray-800 mb-6 text-center">
           Contact Us
         </h2>
